@@ -1,0 +1,57 @@
+.topBar{
+	background:#0a3ac9;
+	padding: 5px 0;
+}
+.top_btns{
+	float:left;
+	width:100%;
+}
+.top_btns .btn {
+    width: 100px;
+    margin: 3px;
+}
+.top_btns input{
+	float:right;
+}
+.heading{
+	float:left;
+	width:100%;
+	background: #d3e9fc;
+}
+.menuBar{
+	border-top: 1px solid #337ab7;
+	border-bottom: 1px solid #337ab7;
+}
+.menuBar ul li a{
+    font-weight: bold;
+}
+.img_slider{
+	float:left;
+	width:100%;
+}
+.slides{
+	float:left;
+	width:100%;
+}
+.slides img{
+	float:left;
+	width:100%;
+}
+footer{
+	float:left;
+	width:100%;
+	background:#0a3ac9;
+        color: #ccc;
+}
+footer ul li a{
+	color:#ccc;
+}
+.foot h3{
+    color: #fff;
+}
+.foot{
+    float: left;
+    text-align: center;
+    width: 33.3%
+}
+

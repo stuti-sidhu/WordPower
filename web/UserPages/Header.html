@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>WordPower</title>
+
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../owlcarousel/assets/owl.theme.green.css">	 
+        <link rel="stylesheet" href="../owlcarousel/assets/owl.carousel.css">
+        <link rel="stylesheet" href="../owlcarousel/assets/owl.theme.default.css">	 
+        <script type="text/javascript" src="../JQuery.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script src="../owlcarousel/owl.carousel.js" type="text/javascript"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.owl-carousel').owlCarousel({
+                    slideSpeed: 300,
+                    paginationSpeed: 400,
+                    items: 1,
+                    autoplay: true,
+                    autoplayTimeout: 7000,
+                    loop: true,
+                    autoplayHoverPause: true
+                });
+            });
+
+            $(".owl-prev").html('<i class="left_arrow"></i>');
+            $(".owl-next").html('<i class="right_arrow"></i>');
+
+        </script>
+    </head>
+
+    <header>
+        <div class="heading">
+            <h1 style="padding-left: 70px;">Welcome : <%=session.getAttribute("NM").toString() %></h1>
+        </div>
+        <div class="menuBar">
+            <div class="container">	
+                <ul class="nav nav-pills">
+                    <li>
+                        <a href="Welcome.jsp">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Test/Practice<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Start.jsp">Test</a></li>
+                            <li><a href="">Practice</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="ChangePassword.jsp" >Change Password</a>
+                    </li>
+                    <li>
+                        <a href="UpdateProfilePic.jsp" >Update ProfilePic </a>
+                    </li>
+                    <li>
+                        <a href="../Login.jsp" >Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <div class="container-fluid" style="min-height: 500px;">

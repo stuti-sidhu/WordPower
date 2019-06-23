@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>WordPower</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.green.css">	 
+        <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">	 
+        <script type="text/javascript" src="JQuery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="owlcarousel/owl.carousel.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.owl-carousel').owlCarousel({
+                    slideSpeed: 300,
+                    paginationSpeed: 400,
+                    items: 1,
+                    autoplay: true,
+                    autoplayTimeout: 7000,
+                    loop: true,
+                    autoplayHoverPause: true
+                });
+            });
+
+            $(".owl-prev").html('<i class="left_arrow"></i>');
+            $(".owl-next").html('<i class="right_arrow"></i>');
+
+        </script>
+    </head>
+
+    <header>
+        <div class="topBar">
+            <div class="container">
+                <div class="top_btns">
+                    <a href="Login.jsp" class="btn btn-info pull-right">Login</a>
+                    <a href="Registration.jsp" class="btn btn-success pull-right ">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="heading">
+            <h1 class="text-center">WordPower Learning Academy</h1>
+        </div>
+        <div class="menuBar">
+            <div class="container">	
+                <ul class="nav nav-pills">
+                    <li>
+                        <a href="Home.jsp">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">First</a></li>
+                            <li><a href="">Second</a></li>
+                            <li><a href="">third</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Contact Us <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">First</a></li>
+                            <li><a href="">Second</a></li>
+                            <li><a href="">third</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Our Mission <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">First</a></li>
+                            <li><a href="">Second</a></li>
+                            <li><a href="">third</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <div class="container-fluid" style="min-height: 400px;">
